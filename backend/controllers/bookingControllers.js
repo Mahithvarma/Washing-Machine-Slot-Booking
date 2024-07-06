@@ -10,7 +10,11 @@ const getBookings = async (req, res, next) => {
   //   });
 
   try {
-    const bookings = await Booking.find();
+    const { startDate, endDate } = req.query;
+    const bookings = await Booking.find( {date: {
+      $gte: startDate,
+      $lte: endDate
+    }});
     // console.log("mahith: ", bookings);
     res.json(bookings);
   } catch (err) {
