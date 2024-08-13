@@ -20,7 +20,7 @@ const mongo_url = process.env.MONGO_URL;
 app.use(bodyParser.json());
 app.use(cookieparser());
 app.use(cors({
-    origin: ['http://localhost:3000' ,'https://localhost:3000'],
+    origin: ['https://washing-machine-mmboys.netlify.app/'],
     credentials: true
 }));
 
