@@ -1,0 +1,6 @@
+POST http://localhost:5000/api/otp/otpsend
+content-type: application/json
+
+{
+    "emailOrMobile": "mahithvarma8123@gmail.com"
+}
