@@ -1,5 +1,5 @@
-export const host = 'http://localhost:5000';
-// export const host = "https://wsb-server.onrender.com";
+// export const host = 'http://localhost:5000';
+export const host = "https://wsb-server.onrender.com";
 export const RegisterRoute = `${host}/api/auth/register`;
 export const LoginRoute = `${host}/api/auth/login`;
 

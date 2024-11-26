@@ -48,7 +48,7 @@ function AppLayout() {
 
   useEffect(() => {
       async function fetchData() {
-        if (!Cookies.get("token")) {
+        if (!localStorage.getItem("user")) {
           navigate("/login");
         } else {
           navigate("/");

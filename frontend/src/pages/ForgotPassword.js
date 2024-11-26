@@ -43,7 +43,6 @@ function ForgotPassword() {
                 { emailOrMobile: emailOrMobile },
                 { withCredentials: true }
             );
-            setIsLoading(false);
             if (response.status) {
                 toast.success("OTP sent successfully", toastOptions);
                 console.log("otp sent: ", response.data);
@@ -56,6 +55,8 @@ function ForgotPassword() {
             } else {
                 toast.error("Something went wrong!", toastOptions);
             }
+        } finally{
+            setIsLoading(false);
         }
     };
 

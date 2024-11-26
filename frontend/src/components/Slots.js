@@ -62,7 +62,6 @@ const Slots = () => {
                 grid[slot][format(day.date, "yyyy-MM-dd")] = [];
             });
         });
-        console.log(appointments);
         appointments?.forEach((appointment) => {
             const { name, time, date } = appointment;
             if (grid[time] && grid[time][date]) {
