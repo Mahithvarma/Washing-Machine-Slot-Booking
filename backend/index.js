@@ -20,7 +20,7 @@ const mongo_url = "mongodb+srv://21131a0581:mahith123@cluster1.zjtlgoe.mongodb.n
 app.use(bodyParser.json());
 app.use(cookieparser());
 app.use(cors({
-    origin: ['https://washing-machine-mmboys.netlify.app', 'http://washing-machine-mmboys.netlify.app'],
+    origin: ['https://washing-machine-mmboys.netlify.app', 'http://washing-machine-mmboys.netlify.app', 'http://localhost:3000'],
     credentials: true
 }));
 

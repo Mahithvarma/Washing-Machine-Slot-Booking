@@ -28,7 +28,7 @@ const Change = () => {
 
   useEffect(() => {
       const atStart = async () => {
-          setUserName((await JSON.parse(localStorage.getItem("user"))).user.username);
+          setUserName((await JSON.parse(localStorage.getItem("user"))).username);
           const today = new Date();
           const sevenDaysFromNow = new Date();
           sevenDaysFromNow.setDate(today.getDate() + 6);

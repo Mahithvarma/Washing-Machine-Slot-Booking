@@ -36,7 +36,7 @@ const Input = () => {
         navigate("/login");
       }
       else{
-        setUserName(await JSON.parse(localStorage.getItem("user")).user.username);
+        setUserName(await JSON.parse(localStorage.getItem("user")).username);
       }
       const today = new Date();
       const sevenDaysFromNow = new Date();

@@ -15,4 +15,4 @@ const bookingSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model("bookings", bookingSchema, "slots");
+module.exports = mongoose.model("bookings", bookingSchema, "bookings");
